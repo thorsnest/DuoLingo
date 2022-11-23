@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed( Runnable {
             setContentView(binding.root)
         }, 6500)
+        supportFragmentManager.beginTransaction().replace(binding.fcontainer.id, FeedFragment())
         binding.btCasa.setOnClickListener {
             supportFragmentManager.beginTransaction().replace(binding.fcontainer.id, HomeFragment())
         }
