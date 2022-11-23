@@ -16,13 +16,10 @@ class FeedFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = FragmentFeedBinding.inflate(layoutInflater)
-        feeds = arrayListOf()
-        omplirFeed()
-        llancarLlista()
     }
 
     private fun llancarLlista() {
-        binding.rvFeed.layoutManager = LinearLayoutManager(requireParentFragment().context)
+        binding.rvFeed.layoutManager = LinearLayoutManager(context)
         binding.rvFeed.adapter = Adaptador(feeds)
     }
 
@@ -39,7 +36,10 @@ class FeedFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_feed, container, false)
+        val view:View =  inflater.inflate(R.layout.fragment_feed, container, false)
+        feeds = arrayListOf()
+        omplirFeed()
+        llancarLlista()
+        return view
     }
 }
