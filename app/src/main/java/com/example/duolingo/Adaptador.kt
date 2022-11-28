@@ -24,9 +24,6 @@ class Adaptador(private val llista: ArrayList<Feed>):RecyclerView.Adapter<Adapta
         holder.temps.text = llista[position].temps
         holder.imatge.setImageResource(llista[position].imatge)
         holder.desc.text = llista[position].desc
-        val typeFace = Typeface.createFromAsset(holder.view.context.assets, "feather_bold.ttf")
-        holder.temps.typeface = typeFace
-        holder.desc.typeface = typeFace
     }
 
     override fun getItemCount() : Int = llista.size

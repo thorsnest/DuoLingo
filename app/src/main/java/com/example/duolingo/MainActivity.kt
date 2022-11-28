@@ -28,6 +28,12 @@ class MainActivity : AppCompatActivity() {
             val nouFragment = HomeFragment()
             canviFragment(nouFragment)
         }
+
+        binding.btSuper.setOnClickListener {
+            val nouFragment = SuperFragment()
+            canviFragment(nouFragment)
+        }
+
         binding.btFeed.setOnClickListener {
 
             val nouFragment = FeedFragment()

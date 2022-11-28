@@ -10,7 +10,7 @@
         android:id="@+id/fcontainer"
         android:name="com.example.duolingo.HomeFragment"
         android:layout_width="match_parent"
-        android:layout_height="660dp"
+        android:layout_height="730dp"
         android:layout_alignTop="@+id/menu_principal"
         android:layout_alignParentTop="true"
         tools:layout="@layout/fragment_home"/>
