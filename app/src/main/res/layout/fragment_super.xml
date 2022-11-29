@@ -1,118 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".SuperFragment"
     android:layout_gravity="center"
-    android:background="#4d5073">
+    android:background="#4d5073"
+    tools:context=".SuperFragment">
 
-    <FrameLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000437"
-        android:layout_above="@+id/super_below_layout"
-        >
+        android:fillViewport="true"
+        android:layout_above="@+id/super_below_layout">
 
-        <ImageView
-            android:id="@+id/titolSuper_iv"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:src="@drawable/super_text" />
+            android:layout_above="@+id/super_below_layout"
+            android:background="#000437">
 
-        <ImageView
-            android:id="@+id/duoSuper_iv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="130dp"
-            android:src="@drawable/duolingo_super" />
+            <ImageView
+                android:id="@+id/titolSuper_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="start"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/super_text" />
 
-        <TextView
-            android:id="@+id/textSuperBold_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:text="50 mistakes to practice"
-            android:fontFamily="@font/din_bold"
-            android:textColor="@color/white"
-            android:textSize="28sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/duoSuper_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="130dp"
+                android:src="@drawable/duolingo_super" />
 
-        <TextView
-            android:id="@+id/textSuperRegular_tv"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="80dp"
-            android:fontFamily="@font/din"
-            android:text="Start a personalized lesson to practice your mistakes"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/textSuperBold_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/din_bold"
+                android:text="50 mistakes to practice"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/super_cv"
-            android:layout_gravity="center"
-            android:layout_marginTop="200dp"
-            android:layout_width="300dp"
-            android:layout_height="130dp"
-            app:cardCornerRadius="20dp">
+            <TextView
+                android:id="@+id/textSuperRegular_tv"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/din"
+                android:text="Start a personalized lesson to practice your mistakes"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/super_cv"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="200dp"
+                app:cardCornerRadius="20dp">
 
-                <ImageView
-                    android:id="@+id/brokenHeart_iv"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/broken_heart"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginStart="15dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/titleCvSuper_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/brokenHeart_iv"
-                    android:layout_alignBottom="@+id/brokenHeart_iv"
-                    android:text="Most recent"
-                    android:textSize="19sp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:fontFamily="@font/din_bold"
-                    android:textColor="#ff4b4b"
-                    />
+                    <ImageView
+                        android:id="@+id/brokenHeart_iv"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/broken_heart" />
 
-                <TextView
-                    android:id="@+id/textCvSuper_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="15dp"
-                    android:text="Translate this sentence"
-                    android:textSize="19sp"
-                    android:fontFamily="@font/din_bold"
-                    android:textColor="#4b4b4b"
-                    />
+                    <TextView
+                        android:id="@+id/titleCvSuper_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/brokenHeart_iv"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/brokenHeart_iv"
+                        android:fontFamily="@font/din_bold"
+                        android:text="Most recent"
+                        android:textColor="#ff4b4b"
+                        android:textSize="19sp" />
 
-                <ImageView
-                    android:layout_width="230dp"
-                    android:layout_height="20dp"
-                    android:layout_alignStart="@id/textCvSuper_tv"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="22dp"
-                    android:src="@drawable/progress_super" />
-            </RelativeLayout>
+                    <TextView
+                        android:id="@+id/textCvSuper_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/din_bold"
+                        android:text="Translate this sentence"
+                        android:textColor="#4b4b4b"
+                        android:textSize="19sp" />
 
-        </androidx.cardview.widget.CardView>
-    </FrameLayout>
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="20dp"
+                        android:layout_alignStart="@id/textCvSuper_tv"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="22dp"
+                        android:src="@drawable/progress_super" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/super_cv2"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="350dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/brokenHeart_iv2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/broken_heart" />
+
+                    <TextView
+                        android:id="@+id/titleCvSuper_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/brokenHeart_iv2"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/brokenHeart_iv2"
+                        android:fontFamily="@font/din_bold"
+                        android:text="Most recent"
+                        android:textColor="#ff4b4b"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/textCvSuper_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/din_bold"
+                        android:text="Translate this sentence"
+                        android:textColor="#4b4b4b"
+                        android:textSize="19sp" />
+
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="20dp"
+                        android:layout_alignStart="@id/textCvSuper_tv2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="22dp"
+                        android:src="@drawable/progress_super" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/super_cv3"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="500dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/brokenHeart_iv3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/broken_heart" />
+
+                    <TextView
+                        android:id="@+id/titleCvSuper_tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/brokenHeart_iv3"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/brokenHeart_iv3"
+                        android:fontFamily="@font/din_bold"
+                        android:text="Most recent"
+                        android:textColor="#ff4b4b"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/textCvSuper_tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/din_bold"
+                        android:text="Translate this sentence"
+                        android:textColor="#4b4b4b"
+                        android:textSize="19sp" />
+
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="20dp"
+                        android:layout_alignStart="@id/textCvSuper_tv3"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="22dp"
+                        android:src="@drawable/progress_super" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
 
     <FrameLayout
         android:id="@+id/super_below_layout"
