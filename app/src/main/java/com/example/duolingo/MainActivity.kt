@@ -34,6 +34,11 @@ class MainActivity : AppCompatActivity() {
             canviFragment(nouFragment)
         }
 
+        binding.btRank.setOnClickListener {
+            val nouFragment = RankingFragment()
+            canviFragment(nouFragment)
+        }
+
         binding.btFeed.setOnClickListener {
 
             val nouFragment = FeedFragment()
