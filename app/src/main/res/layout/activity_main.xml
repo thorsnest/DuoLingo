@@ -9,59 +9,59 @@
         android:id="@+id/fcontainer"
         android:name="com.example.duolingo.HomeFragment"
         android:layout_width="match_parent"
-        android:layout_height="730dp"
-        android:layout_alignTop="@+id/menu_principal"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu_principal"
         android:layout_alignParentTop="true"
         tools:layout="@layout/fragment_home"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:id="@+id/menu_principal">
         <ImageButton
             android:layout_width="70dp"
+            android:layout_height="70dp"
             android:background="@color/white"
-            android:layout_height="match_parent"
             android:id="@+id/bt_casa"
             android:src="@drawable/birdhouse"
             android:contentDescription="A house" />
         <ImageButton
             android:layout_width="70dp"
+            android:layout_height="70dp"
             android:background="@color/white"
-            android:layout_height="match_parent"
             android:id="@+id/bt_super"
             android:src="@drawable/superheart"
             android:contentDescription="A heart"
             android:layout_toEndOf="@+id/bt_casa"/>
         <ImageButton
             android:layout_width="70dp"
+            android:layout_height="70dp"
             android:background="@color/white"
-            android:layout_height="match_parent"
             android:id="@+id/bt_rank"
             android:src="@drawable/rank"
             android:contentDescription="A medal"
             android:layout_toEndOf="@+id/bt_super"/>
         <ImageButton
             android:layout_width="70dp"
+            android:layout_height="70dp"
             android:background="@color/white"
-            android:layout_height="match_parent"
             android:id="@+id/bt_shop"
             android:src="@drawable/friend"
             android:contentDescription="A person smiling"
             android:layout_toEndOf="@+id/bt_rank"/>
         <ImageButton
             android:layout_width="70dp"
+            android:layout_height="70dp"
             android:background="@color/white"
-            android:layout_height="match_parent"
             android:id="@+id/bt_goals"
             android:src="@drawable/goals"
             android:contentDescription="A chest"
             android:layout_toEndOf="@+id/bt_shop"/>
         <ImageButton
             android:layout_width="70dp"
+            android:layout_height="70dp"
             android:background="@color/white"
-            android:layout_height="match_parent"
             android:id="@+id/bt_feed"
             android:src="@drawable/bell"
             android:contentDescription="A golden bell"

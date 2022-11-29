@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,8 +10,10 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="628dp"
-        android:background="#000437">
+        android:layout_height="match_parent"
+        android:background="#000437"
+        android:layout_above="@+id/super_below_layout"
+        >
 
         <ImageView
             android:id="@+id/titolSuper_iv"
@@ -113,9 +115,10 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/super_below_layout"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
         android:background="#000437">
 
         <androidx.cardview.widget.CardView
@@ -142,4 +145,4 @@
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
     </FrameLayout>
-</FrameLayout>
+</RelativeLayout>

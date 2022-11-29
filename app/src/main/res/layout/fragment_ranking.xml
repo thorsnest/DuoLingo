@@ -6,26 +6,26 @@
     tools:context=".RankingFragment">
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
         android:scrollbars="none">
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="70dp"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
-        android:id="@+id/menu_principal">
+        android:id="@+id/menu_lligues">
         <ImageButton
             android:layout_width="70dp"
             android:background="@color/white"
             android:layout_height="match_parent"
             android:id="@+id/bt_casa"
-            android:src="@drawable/rank"
+            android:src="@drawable/rank_bronze_b"
             android:contentDescription="A house" />
         <ImageButton
             android:layout_width="70dp"
             android:background="@color/white"
             android:layout_height="match_parent"
             android:id="@+id/bt_casa2"
-            android:src="@drawable/rank"
+            android:src="@drawable/rank_silver_b"
             android:contentDescription="A house"
             android:layout_toEndOf="@+id/bt_casa"/>
         <ImageButton
@@ -33,7 +33,7 @@
             android:background="@color/white"
             android:layout_height="match_parent"
             android:id="@+id/bt_casa3"
-            android:src="@drawable/rank"
+            android:src="@drawable/rank_gold_b"
             android:contentDescription="A house"
             android:layout_toEndOf="@+id/bt_casa2" />
         <ImageButton
@@ -41,15 +41,15 @@
             android:background="@color/white"
             android:layout_height="match_parent"
             android:id="@+id/bt_casa4"
-            android:src="@drawable/rank"
+            android:src="@drawable/rank_sapphire_b"
             android:contentDescription="A house"
             android:layout_toEndOf="@+id/bt_casa3" />
         <ImageButton
-            android:layout_width="70dp"
+            android:layout_width="100dp"
             android:background="@color/white"
             android:layout_height="match_parent"
             android:id="@+id/bt_super"
-            android:src="@drawable/rank"
+            android:src="@drawable/rank_ruby"
             android:contentDescription="A heart"
             android:layout_toEndOf="@+id/bt_casa4"/>
         <ImageButton
@@ -57,7 +57,7 @@
             android:background="@color/white"
             android:layout_height="match_parent"
             android:id="@+id/bt_rank"
-            android:src="@drawable/rank"
+            android:src="@drawable/rank_locked"
             android:contentDescription="A medal"
             android:layout_toEndOf="@+id/bt_super"/>
         <ImageButton
@@ -65,7 +65,7 @@
             android:background="@color/white"
             android:layout_height="match_parent"
             android:id="@+id/bt_shop"
-            android:src="@drawable/rank"
+            android:src="@drawable/rank_locked"
             android:contentDescription="A person smiling"
             android:layout_toEndOf="@+id/bt_rank"/>
         <ImageButton
@@ -73,7 +73,7 @@
             android:background="@color/white"
             android:layout_height="match_parent"
             android:id="@+id/bt_goals"
-            android:src="@drawable/rank"
+            android:src="@drawable/rank_locked"
             android:contentDescription="A chest"
             android:layout_toEndOf="@+id/bt_shop"/>
         <ImageButton
@@ -81,7 +81,7 @@
             android:background="@color/white"
             android:layout_height="match_parent"
             android:id="@+id/bt_feed"
-            android:src="@drawable/rank"
+            android:src="@drawable/rank_locked"
             android:contentDescription="A golden bell"
             android:layout_toEndOf="@+id/bt_goals"/>
     </RelativeLayout>

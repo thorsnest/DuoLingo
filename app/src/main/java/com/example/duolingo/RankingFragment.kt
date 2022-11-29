@@ -9,7 +9,6 @@ import com.example.duolingo.databinding.FragmentRankingBinding
 
 class RankingFragment : Fragment() {
     private lateinit var binding: FragmentRankingBinding
-    private lateinit var ranks: ArrayList<Rank>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
