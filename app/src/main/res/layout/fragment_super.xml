@@ -26,7 +26,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_gravity="start"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:src="@drawable/super_text" />
@@ -38,15 +37,15 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="130dp"
+                android:layout_marginTop="50dp"
                 android:src="@drawable/duolingo_super" />
 
             <TextView
                 android:id="@+id/textSuperBold_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/duoSuper_iv"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/din_bold"
                 android:text="50 mistakes to practice"
@@ -58,8 +57,9 @@
                 android:id="@+id/textSuperRegular_tv"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textSuperBold_tv"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/din"
                 android:text="Start a personalized lesson to practice your mistakes"
                 android:textAlignment="center"
@@ -70,8 +70,9 @@
                 android:id="@+id/super_cv"
                 android:layout_width="300dp"
                 android:layout_height="130dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textSuperRegular_tv"
                 app:cardCornerRadius="20dp">
 
                 <RelativeLayout
@@ -125,8 +126,9 @@
                 android:id="@+id/super_cv2"
                 android:layout_width="300dp"
                 android:layout_height="130dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="350dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/super_cv"
                 app:cardCornerRadius="20dp">
 
                 <RelativeLayout
@@ -180,8 +182,9 @@
                 android:id="@+id/super_cv3"
                 android:layout_width="300dp"
                 android:layout_height="130dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="500dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/super_cv2"
                 app:cardCornerRadius="20dp">
 
                 <RelativeLayout
