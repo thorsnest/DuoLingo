@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
-class Adaptador(private val llista: ArrayList<Feed>):RecyclerView.Adapter<Adaptador.Viewholder>() {
+class AdaptadorFeed(private val llista: ArrayList<Feed>):RecyclerView.Adapter<AdaptadorFeed.Viewholder>() {
     class Viewholder(val view: View):ViewHolder(view) {
         val temps: TextView = view.findViewById(R.id.tv_hora)
         val desc: TextView = view.findViewById(R.id.tv_desc)

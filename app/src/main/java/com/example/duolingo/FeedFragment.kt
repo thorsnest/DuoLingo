@@ -30,8 +30,8 @@ class FeedFragment : Fragment() {
 
     private fun llancarLlista() {
         binding.rvFeed.layoutManager = LinearLayoutManager(context)
-        val adaptador = Adaptador(feeds)
-        binding.rvFeed.adapter = adaptador
+        val adaptadorFeed = AdaptadorFeed(feeds)
+        binding.rvFeed.adapter = adaptadorFeed
     }
 
     private fun omplirFeed() {
