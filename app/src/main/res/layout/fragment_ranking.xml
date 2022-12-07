@@ -4,6 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RankingFragment">
+
+    <FrameLayout
+        android:layout_height="202dp"
+        android:layout_width="match_parent"
+        android:background="#D8D8D8">
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -87,4 +92,40 @@
     </RelativeLayout>
     </HorizontalScrollView>
 
+    <FrameLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white">
+
+    <TextView
+        android:id="@+id/league_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/din_bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:text="Ruby League"/>
+
+    <TextView
+        android:id="@+id/league_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/din"
+        android:textSize="15dp"
+        android:textColor="#4C4C4C"
+        android:text="Complete against players in a weekly leaderboard"/>
+
+    </FrameLayout>
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="202dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
 </FrameLayout>
