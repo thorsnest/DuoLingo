@@ -35,7 +35,7 @@ class AdaptadorPersonRanked(private val llista: ArrayList<PersonRanked>):Recycle
         else {
             holder.pos.setTextColor(Color.BLACK)
         }
-        holder.xp.text = llista[position].xp.toString() + "XP"
+        holder.xp.text = llista[position].xp.toString() + " XP"
     }
 
     override fun getItemCount() : Int = llista.size
