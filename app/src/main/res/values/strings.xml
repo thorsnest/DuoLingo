@@ -3,4 +3,12 @@
     <string name="loading_iv_description">Icon on loading screen</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="a_locked_medal">A locked medal</string>
+    <string name="a_bronze_medal">A bronze medal</string>
+    <string name="a_silver_medal">A silver medal</string>
+    <string name="a_gold_medal">A gold medal</string>
+    <string name="a_sapphire_medal">A sapphire medal</string>
+    <string name="a_ruby_medal">A ruby medal</string>
+    <string name="ruby_league">Ruby League</string>
+    <string name="league_desc">Complete against players in a weekly leaderboard</string>
 </resources>

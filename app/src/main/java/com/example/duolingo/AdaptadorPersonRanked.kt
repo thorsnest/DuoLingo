@@ -1,3 +1,5 @@
+@file:Suppress("SpellCheckingInspection")
+
 package com.example.duolingo
 
 import android.graphics.Color
@@ -10,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
 class AdaptadorPersonRanked(private val llista: ArrayList<PersonRanked>):RecyclerView.Adapter<AdaptadorPersonRanked.Viewholder>() {
-    class Viewholder(val view: View):ViewHolder(view) {
+    class Viewholder(view: View):ViewHolder(view) {
         val pos: TextView = view.findViewById(R.id.tv_pos)
         val name: TextView = view.findViewById(R.id.tv_nom)
         val xp: TextView = view.findViewById(R.id.tv_xp)
@@ -23,7 +25,8 @@ class AdaptadorPersonRanked(private val llista: ArrayList<PersonRanked>):Recycle
     }
 
     override fun onBindViewHolder(holder: Viewholder, position: Int) {
-        holder.pos.text = (position + 1).toString()
+        val pos : String = (position + 1).toString()
+        holder.pos.text = pos
         holder.imatge.setImageResource(llista[position].imatge)
         holder.name.text = llista[position].name
         if (position < 8) {
@@ -35,7 +38,8 @@ class AdaptadorPersonRanked(private val llista: ArrayList<PersonRanked>):Recycle
         else {
             holder.pos.setTextColor(Color.BLACK)
         }
-        holder.xp.text = llista[position].xp.toString() + " XP"
+        val xp : String = llista[position].xp.toString() + " XP"
+        holder.xp.text = xp
     }
 
     override fun getItemCount() : Int = llista.size

@@ -1,6 +1,5 @@
 package com.example.duolingo
 
-import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -17,7 +16,7 @@ class GoalsFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentGoalsBinding.inflate(inflater, container, false)
 
         val root: View = binding.root

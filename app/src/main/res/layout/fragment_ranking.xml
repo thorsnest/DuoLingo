@@ -16,79 +16,78 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
         android:id="@+id/menu_lligues">
         <ImageButton
             android:layout_width="70dp"
             android:background="@color/white"
             android:layout_height="match_parent"
-            android:id="@+id/bt_casa"
+            android:id="@+id/rank_bronze"
             android:src="@drawable/rank_bronze_b"
-            android:contentDescription="A house" />
+            android:contentDescription="@string/a_bronze_medal" />
         <ImageButton
             android:layout_width="70dp"
             android:background="@color/white"
             android:layout_height="match_parent"
-            android:id="@+id/bt_casa2"
+            android:id="@+id/rank_silver"
             android:src="@drawable/rank_silver_b"
-            android:contentDescription="A house"
-            android:layout_toEndOf="@+id/bt_casa"/>
+            android:contentDescription="@string/a_silver_medal"
+            android:layout_toEndOf="@+id/rank_bronze"/>
         <ImageButton
             android:layout_width="70dp"
             android:background="@color/white"
             android:layout_height="match_parent"
-            android:id="@+id/bt_casa3"
+            android:id="@+id/rank_gold"
             android:src="@drawable/rank_gold_b"
-            android:contentDescription="A house"
-            android:layout_toEndOf="@+id/bt_casa2" />
+            android:contentDescription="@string/a_gold_medal"
+            android:layout_toEndOf="@+id/rank_silver" />
         <ImageButton
             android:layout_width="70dp"
             android:background="@color/white"
             android:layout_height="match_parent"
-            android:id="@+id/bt_casa4"
+            android:id="@+id/rank_sapphire"
             android:src="@drawable/rank_sapphire_b"
-            android:contentDescription="A house"
-            android:layout_toEndOf="@+id/bt_casa3" />
+            android:contentDescription="@string/a_sapphire_medal"
+            android:layout_toEndOf="@+id/rank_gold" />
         <ImageButton
             android:layout_width="100dp"
             android:background="@color/white"
             android:layout_height="match_parent"
-            android:id="@+id/bt_super"
+            android:id="@+id/rank_ruby"
             android:src="@drawable/rank_ruby"
-            android:contentDescription="A heart"
-            android:layout_toEndOf="@+id/bt_casa4"/>
+            android:contentDescription="@string/a_ruby_medal"
+            android:layout_toEndOf="@+id/rank_sapphire"/>
         <ImageButton
             android:layout_width="70dp"
             android:background="@color/white"
             android:layout_height="match_parent"
-            android:id="@+id/bt_rank"
+            android:id="@+id/medal_locked1"
             android:src="@drawable/rank_locked"
-            android:contentDescription="A medal"
-            android:layout_toEndOf="@+id/bt_super"/>
+            android:contentDescription="@string/a_locked_medal"
+            android:layout_toEndOf="@+id/rank_ruby"/>
         <ImageButton
             android:layout_width="70dp"
             android:background="@color/white"
             android:layout_height="match_parent"
-            android:id="@+id/bt_shop"
+            android:id="@+id/medal_locked2"
             android:src="@drawable/rank_locked"
-            android:contentDescription="A person smiling"
-            android:layout_toEndOf="@+id/bt_rank"/>
+            android:contentDescription="@string/a_locked_medal"
+            android:layout_toEndOf="@+id/medal_locked1"/>
         <ImageButton
             android:layout_width="70dp"
             android:background="@color/white"
             android:layout_height="match_parent"
-            android:id="@+id/bt_goals"
+            android:id="@+id/medal_locked3"
             android:src="@drawable/rank_locked"
-            android:contentDescription="A chest"
-            android:layout_toEndOf="@+id/bt_shop"/>
+            android:contentDescription="@string/a_locked_medal"
+            android:layout_toEndOf="@+id/medal_locked2"/>
         <ImageButton
             android:layout_width="70dp"
             android:background="@color/white"
             android:layout_height="match_parent"
-            android:id="@+id/bt_feed"
+            android:id="@+id/medal_locked4"
             android:src="@drawable/rank_locked"
-            android:contentDescription="A golden bell"
-            android:layout_toEndOf="@+id/bt_goals"/>
+            android:contentDescription="@string/a_locked_medal"
+            android:layout_toEndOf="@+id/medal_locked3"/>
     </RelativeLayout>
     </HorizontalScrollView>
 
@@ -105,9 +104,9 @@
         android:layout_marginBottom="30dp"
         android:layout_gravity="center"
         android:fontFamily="@font/din_bold"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textColor="@color/black"
-        android:text="Ruby League"/>
+        android:text="@string/ruby_league"/>
 
     <TextView
         android:id="@+id/league_text_tv"
@@ -115,9 +114,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="@font/din"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textColor="#4C4C4C"
-        android:text="Complete against players in a weekly leaderboard"/>
+        android:text="@string/league_desc"/>
 
     </FrameLayout>
     </FrameLayout>

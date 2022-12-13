@@ -42,7 +42,7 @@
             app:layout_constraintStart_toEndOf="@+id/iv_fotoPerfilRanked"
             android:fontFamily="@font/din_bold"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             tools:text="nesgondia" />
 
         <TextView
@@ -55,7 +55,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:fontFamily="@font/din"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             tools:text="14 XP" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

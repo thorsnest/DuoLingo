@@ -3,16 +3,11 @@ package com.example.duolingo
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.View
-import android.view.WindowInsetsController
-import android.widget.ImageButton
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.fragment.app.Fragment
-import com.bumptech.glide.Glide
 import com.example.duolingo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -22,10 +17,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(R.layout.loading_screen_2)
         amagaBarraEstat()
-        Handler(Looper.getMainLooper()).postDelayed( Runnable {
+        Handler(Looper.getMainLooper()).postDelayed({
             setContentView(R.layout.loading_screen_1)
         }, 2000)
-        Handler(Looper.getMainLooper()).postDelayed( Runnable {
+        Handler(Looper.getMainLooper()).postDelayed({
             setContentView(binding.root)
         }, 6500)
 

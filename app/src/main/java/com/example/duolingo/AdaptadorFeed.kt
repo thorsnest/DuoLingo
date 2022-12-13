@@ -1,3 +1,5 @@
+@file:Suppress("SpellCheckingInspection")
+
 package com.example.duolingo
 
 import android.view.LayoutInflater
@@ -9,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
 class AdaptadorFeed(private val llista: ArrayList<Feed>):RecyclerView.Adapter<AdaptadorFeed.Viewholder>() {
-    class Viewholder(val view: View):ViewHolder(view) {
+    class Viewholder(view: View):ViewHolder(view) {
         val temps: TextView = view.findViewById(R.id.tv_hora)
         val desc: TextView = view.findViewById(R.id.tv_desc)
         val imatge: ImageView = view.findViewById(R.id.iv_feed)
