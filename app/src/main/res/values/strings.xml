@@ -11,4 +11,25 @@
     <string name="a_ruby_medal">A ruby medal</string>
     <string name="ruby_league">Ruby League</string>
     <string name="league_desc">Complete against players in a weekly leaderboard</string>
+    <string name="duolingo_super_logo">Duolingo Super Logo</string>
+    <string name="duolingo_rainbow_colored">Duolingo rainbow colored</string>
+    <string name="_50_mistakes_to_practice">50 mistakes to practice</string>
+    <string name="super_description">Start a personalized lesson to practice your mistakes</string>
+    <string name="a_broken_heart">A broken heart</string>
+    <string name="most_recent">Most recent</string>
+    <string name="translate_this_sentence">Translate this sentence</string>
+    <string name="super_progress_bar">Super progress bar</string>
+    <string name="challenges">Challenges</string>
+    <string name="goals">GOALS</string>
+    <string name="badges">BADGES</string>
+    <string name="a_house">A house</string>
+    <string name="a_heart">A heart</string>
+    <string name="a_medal">A medal</string>
+    <string name="a_person_smiling">A person smiling</string>
+    <string name="a_chest">A chest</string>
+    <string name="a_golden_bell">A golden bell</string>
+    <string name="imatge_del_feed">imatge del feed</string>
+    <string name="start_my_free_2_weeks">START MY FREE 2 WEEKS</string>
+    <string name="a_lock">A lock</string>
+    <string name="a_star">A star</string>
 </resources>

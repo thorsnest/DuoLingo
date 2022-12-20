@@ -25,14 +25,14 @@
             android:background="@color/white"
             android:id="@+id/bt_casa"
             android:src="@drawable/birdhouse"
-            android:contentDescription="A house" />
+            android:contentDescription="@string/a_house" />
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@color/white"
             android:id="@+id/bt_super"
             android:src="@drawable/superheart"
-            android:contentDescription="A heart"
+            android:contentDescription="@string/a_heart"
             android:layout_toEndOf="@+id/bt_casa"/>
         <ImageButton
             android:layout_width="70dp"
@@ -40,7 +40,7 @@
             android:background="@color/white"
             android:id="@+id/bt_rank"
             android:src="@drawable/rank"
-            android:contentDescription="A medal"
+            android:contentDescription="@string/a_medal"
             android:layout_toEndOf="@+id/bt_super"/>
         <ImageButton
             android:layout_width="70dp"
@@ -48,7 +48,7 @@
             android:background="@color/white"
             android:id="@+id/bt_shop"
             android:src="@drawable/friend"
-            android:contentDescription="A person smiling"
+            android:contentDescription="@string/a_person_smiling"
             android:layout_toEndOf="@+id/bt_rank"/>
         <ImageButton
             android:layout_width="70dp"
@@ -56,7 +56,7 @@
             android:background="@color/white"
             android:id="@+id/bt_goals"
             android:src="@drawable/goals"
-            android:contentDescription="A chest"
+            android:contentDescription="@string/a_chest"
             android:layout_toEndOf="@+id/bt_shop"/>
         <ImageButton
             android:layout_width="70dp"
@@ -64,7 +64,7 @@
             android:background="@color/white"
             android:id="@+id/bt_feed"
             android:src="@drawable/bell"
-            android:contentDescription="A golden bell"
+            android:contentDescription="@string/a_golden_bell"
             android:layout_toEndOf="@+id/bt_goals"/>
     </RelativeLayout>
 </RelativeLayout>

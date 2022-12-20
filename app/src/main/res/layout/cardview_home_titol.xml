@@ -7,7 +7,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/owl">
         <TextView
             android:id="@+id/home_cv_titol_titol"
             android:layout_width="wrap_content"
@@ -18,7 +19,9 @@
             android:layout_marginStart="15dp"
             tools:text="Unit 1"
             android:fontFamily="@font/din_bold"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
         <TextView
             android:id="@+id/home_cv_titol_desc"
             android:layout_width="wrap_content"
@@ -27,9 +30,11 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="10dp"
             android:layout_marginStart="15dp"
-            tools:text="Form basic sentences, greet people"
+            tools:text="Use basic phrases, say what people do"
             android:fontFamily="@font/din"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
 
 
 

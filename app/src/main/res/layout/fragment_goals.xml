@@ -15,9 +15,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:fontFamily="@font/din_bold"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="@color/lightgrey"
-        android:text="Challenges" />
+        android:text="@string/challenges" />
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/bt_goals"
@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textColor="@color/macaw"
-        android:text="GOALS"
+        android:text="@string/goals"
         android:gravity="center"
         android:fontFamily="@font/feather_bold"/>
 
@@ -58,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textColor="@color/lightgrey"
-        android:text="BADGES"
+        android:text="@string/badges"
         android:gravity="center"
         android:fontFamily="@font/feather_bold"/>
 

@@ -16,14 +16,15 @@ class RankingFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         binding = FragmentRankingBinding.inflate(inflater, container, false)
-        // Inflate the layout for this fragment
         val root: View = binding.root
 
         omplirFeed()
         llancarLlista()
+
+        binding.rankRuby.requestFocus()
 
         return root
     }

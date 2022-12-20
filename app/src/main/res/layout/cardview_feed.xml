@@ -28,7 +28,7 @@
             android:id="@+id/iv_feed"
             android:src="@drawable/backpack"
             app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="imatge del feed"
+            android:contentDescription="@string/imatge_del_feed"
             />
 
         <TextView

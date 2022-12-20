@@ -6,119 +6,132 @@
     tools:context=".RankingFragment">
 
     <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="202dp"
-        android:layout_width="match_parent"
         android:background="#D8D8D8">
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:scrollbars="none">
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/menu_lligues">
-        <ImageButton
-            android:layout_width="70dp"
-            android:background="@color/white"
-            android:layout_height="match_parent"
-            android:id="@+id/rank_bronze"
-            android:src="@drawable/rank_bronze_b"
-            android:contentDescription="@string/a_bronze_medal" />
-        <ImageButton
-            android:layout_width="70dp"
-            android:background="@color/white"
-            android:layout_height="match_parent"
-            android:id="@+id/rank_silver"
-            android:src="@drawable/rank_silver_b"
-            android:contentDescription="@string/a_silver_medal"
-            android:layout_toEndOf="@+id/rank_bronze"/>
-        <ImageButton
-            android:layout_width="70dp"
-            android:background="@color/white"
-            android:layout_height="match_parent"
-            android:id="@+id/rank_gold"
-            android:src="@drawable/rank_gold_b"
-            android:contentDescription="@string/a_gold_medal"
-            android:layout_toEndOf="@+id/rank_silver" />
-        <ImageButton
-            android:layout_width="70dp"
-            android:background="@color/white"
-            android:layout_height="match_parent"
-            android:id="@+id/rank_sapphire"
-            android:src="@drawable/rank_sapphire_b"
-            android:contentDescription="@string/a_sapphire_medal"
-            android:layout_toEndOf="@+id/rank_gold" />
-        <ImageButton
-            android:layout_width="100dp"
-            android:background="@color/white"
-            android:layout_height="match_parent"
-            android:id="@+id/rank_ruby"
-            android:src="@drawable/rank_ruby"
-            android:contentDescription="@string/a_ruby_medal"
-            android:layout_toEndOf="@+id/rank_sapphire"/>
-        <ImageButton
-            android:layout_width="70dp"
-            android:background="@color/white"
-            android:layout_height="match_parent"
-            android:id="@+id/medal_locked1"
-            android:src="@drawable/rank_locked"
-            android:contentDescription="@string/a_locked_medal"
-            android:layout_toEndOf="@+id/rank_ruby"/>
-        <ImageButton
-            android:layout_width="70dp"
-            android:background="@color/white"
-            android:layout_height="match_parent"
-            android:id="@+id/medal_locked2"
-            android:src="@drawable/rank_locked"
-            android:contentDescription="@string/a_locked_medal"
-            android:layout_toEndOf="@+id/medal_locked1"/>
-        <ImageButton
-            android:layout_width="70dp"
-            android:background="@color/white"
-            android:layout_height="match_parent"
-            android:id="@+id/medal_locked3"
-            android:src="@drawable/rank_locked"
-            android:contentDescription="@string/a_locked_medal"
-            android:layout_toEndOf="@+id/medal_locked2"/>
-        <ImageButton
-            android:layout_width="70dp"
-            android:background="@color/white"
-            android:layout_height="match_parent"
-            android:id="@+id/medal_locked4"
-            android:src="@drawable/rank_locked"
-            android:contentDescription="@string/a_locked_medal"
-            android:layout_toEndOf="@+id/medal_locked3"/>
-    </RelativeLayout>
-    </HorizontalScrollView>
 
-    <FrameLayout
-        android:layout_marginTop="100dp"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@color/white">
+        <HorizontalScrollView
+            android:scrollX="500dp"
+            android:id="@+id/ranking_hsv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scrollbars="none">
 
-    <TextView
-        android:id="@+id/league_title_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:layout_gravity="center"
-        android:fontFamily="@font/din_bold"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        android:text="@string/ruby_league"/>
+            <RelativeLayout
+                android:id="@+id/menu_lligues"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/league_text_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/din"
-        android:textSize="15sp"
-        android:textColor="#4C4C4C"
-        android:text="@string/league_desc"/>
+                <ImageButton
+                    android:id="@+id/rank_bronze"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:contentDescription="@string/a_bronze_medal"
+                    android:src="@drawable/rank_bronze_b" />
 
-    </FrameLayout>
+                <ImageButton
+                    android:id="@+id/rank_silver"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/rank_bronze"
+                    android:background="@color/white"
+                    android:contentDescription="@string/a_silver_medal"
+                    android:src="@drawable/rank_silver_b" />
+
+                <ImageButton
+                    android:id="@+id/rank_gold"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/rank_silver"
+                    android:background="@color/white"
+                    android:contentDescription="@string/a_gold_medal"
+                    android:src="@drawable/rank_gold_b" />
+
+                <ImageButton
+                    android:id="@+id/rank_sapphire"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/rank_gold"
+                    android:background="@color/white"
+                    android:contentDescription="@string/a_sapphire_medal"
+                    android:src="@drawable/rank_sapphire_b" />
+
+                <ImageButton
+                    android:id="@+id/rank_ruby"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/rank_sapphire"
+                    android:background="@color/white"
+                    android:contentDescription="@string/a_ruby_medal"
+                    android:src="@drawable/rank_ruby" />
+
+                <ImageButton
+                    android:id="@+id/medal_locked1"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/rank_ruby"
+                    android:background="@color/white"
+                    android:contentDescription="@string/a_locked_medal"
+                    android:src="@drawable/rank_locked" />
+
+                <ImageButton
+                    android:id="@+id/medal_locked2"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/medal_locked1"
+                    android:background="@color/white"
+                    android:contentDescription="@string/a_locked_medal"
+                    android:src="@drawable/rank_locked" />
+
+                <ImageButton
+                    android:id="@+id/medal_locked3"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/medal_locked2"
+                    android:background="@color/white"
+                    android:contentDescription="@string/a_locked_medal"
+                    android:src="@drawable/rank_locked" />
+
+                <ImageButton
+                    android:id="@+id/medal_locked4"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/medal_locked3"
+                    android:background="@color/white"
+                    android:contentDescription="@string/a_locked_medal"
+                    android:src="@drawable/rank_locked" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/league_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/din_bold"
+                android:text="@string/ruby_league"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/league_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/din"
+                android:text="@string/league_desc"
+                android:textColor="#4C4C4C"
+                android:textSize="15sp" />
+
+        </FrameLayout>
     </FrameLayout>
 
     <androidx.recyclerview.widget.RecyclerView
