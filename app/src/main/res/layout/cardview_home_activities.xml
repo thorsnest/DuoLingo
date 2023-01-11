@@ -2,11 +2,47 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/titol_activities"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/owl">
+            <TextView
+                android:id="@+id/home_cv_titol_titol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                tools:text="Unit 1"
+                android:fontFamily="@font/din_bold"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/home_cv_titol_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/home_cv_titol_titol"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                tools:text="Use basic phrases, say what people do"
+                android:fontFamily="@font/din"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/active_B"
@@ -16,7 +52,7 @@
             app:cardCornerRadius="100dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titol_activities"
             android:layout_marginTop="50dp">
 
             <androidx.cardview.widget.CardView
@@ -99,7 +135,6 @@
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_gravity="center"
-            app:cardCornerRadius="100dp"
             app:cardElevation="0dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="200dp"
@@ -107,30 +142,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/locked1_B">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="75dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center"
-                app:cardBackgroundColor="#b7b7b7"
-                app:cardCornerRadius="50dp">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="75dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="8dp"
-                    app:cardBackgroundColor="#e5e5e5"
-                    app:cardCornerRadius="50dp">
-
                     <ImageView
+                        android:translationZ="3dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:src="@drawable/home_lock"
+                        android:src="@drawable/chest_lock"
                         android:contentDescription="@string/a_lock" />
-                </androidx.cardview.widget.CardView>
 
-            </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -166,6 +185,44 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:src="@drawable/home_lock"
+                        android:contentDescription="@string/a_lock" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lockedLast_B"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            android:layout_marginTop="130dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/locked2_B">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#b7b7b7"
+                app:cardCornerRadius="50dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="#e5e5e5"
+                    app:cardCornerRadius="50dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/last_activity"
                         android:contentDescription="@string/a_lock" />
                 </androidx.cardview.widget.CardView>
 
